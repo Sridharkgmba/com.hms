@@ -15,7 +15,7 @@ public class Spiecejet
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
 		            WebdriverUtility wu = new WebdriverUtility();
-		driver.navigate().to("https://www.yatra.com/");
+		driver.navigate().to("https://www.spicejet.com/");
 		     wu.maximizewindow(driver);
 		       
 		          wu.notification();

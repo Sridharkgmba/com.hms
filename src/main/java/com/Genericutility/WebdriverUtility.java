@@ -3,6 +3,7 @@ import java.awt.Robot;
 import java.awt.event.KeyEvent;
 import java.io.File;
 import java.util.Iterator;
+import java.util.List;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
@@ -54,10 +55,10 @@ public class WebdriverUtility
 		sel.selectByValue(value);
 	}
 
-	public void mouseover(WebDriver driver,WebElement element)
+	public void mouseover(WebDriver driver,WebElement ele)
 	{
 		Actions a = new Actions(driver);
-		a.moveToElement(element).perform();
+		a.moveToElement(ele).perform();
 	}
 	public void draganddrop(WebDriver driver,WebElement src,WebElement dst)
 	{
@@ -114,8 +115,8 @@ public class WebdriverUtility
 	}
 	public void switchtowindow(WebDriver driver,String partialtitle)
 	{
-		Set<String> window = driver.getWindowHandles();
-		Iterator<String> it = window.iterator();
+		Set<String> win = driver.getWindowHandles();
+		Iterator<String> it = win.iterator();
 		while(it.hasNext())
 		{
 			String windit = it.next(); 
@@ -167,6 +168,15 @@ public class WebdriverUtility
 	  {
 		     ChromeOptions cp = new ChromeOptions();
 		      cp.addArguments("---handled--");
+	  }
+	  
+	  public void scrollup(WebDriver driver)
+	  {
+		  for(int i=0;i<=17;i++)
+		  {
+			  JavascriptExecutor jse  =(JavascriptExecutor)driver;
+				jse.executeScript("window.scrollBy(0,-500)");
+		  }
 	  }
 }
 	

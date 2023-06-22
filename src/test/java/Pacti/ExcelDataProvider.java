@@ -8,8 +8,6 @@ import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
 import org.testng.annotations.DataProvider;
 
-import com.Genericutility.Ipathconstant;
-
 public class ExcelDataProvider 
 {
 	@DataProvider

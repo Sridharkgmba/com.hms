@@ -9,7 +9,7 @@
     </classes> 
   </test> <!-- Test -->
   
-  <test name="Test_Runner_02"  preserve-order="false">
+  <test name="Test_Runner_02" parallel="tests"  preserve-order="false">
     <classes>
       <class name="Pacti.Ts_01"/>
     </classes> 

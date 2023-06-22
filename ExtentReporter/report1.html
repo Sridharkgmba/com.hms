@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Hospital Maget</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Mar 28, 2023 03:21:32 pm</span></a>
+<a href="#"><span class="badge badge-primary">Jun 16, 2023 10:02:02 pm</span></a>
 </li>
 </ul>
 </div>
@@ -84,9 +84,9 @@
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">Adddoc</p>
+            <p class="name">test1</p>
             <p class="text-sm">
-              <span>3:21:35 pm</span> / <span>00:00:03:128</span>
+              <span>10:02:02 pm</span> / <span>00:00:16:572</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -94,31 +94,33 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">Adddoc</h5>
-<span class='badge badge-success'>03.28.2023 3:21:35 pm</span>
-<span class='badge badge-danger'>03.28.2023 3:21:38 pm</span>
-<span class='badge badge-default'>00:00:03:128</span>
+<h5 class="test-status text-fail">test1</h5>
+<span class='badge badge-success'>06.16.2023 10:02:02 pm</span>
+<span class='badge badge-danger'>06.16.2023 10:02:18 pm</span>
+<span class='badge badge-default'>00:00:16:572</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
 </div>
 </div>
-</div>    <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='.\screenshot\Adddoc.png' src=".\screenshot\Adddoc.png">
-    
-    </div></div>
-<div class="detail-body mt-4">
+</div><div class="detail-body mt-4">
 <table class="table table-sm">
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>3:21:38 pm</td>
+        <td>10:02:18 pm</td>
         <td>
-          <textarea readonly class="code-block">java.lang.AssertionError: null
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.fail(Assert.java:106)
-	at Pacti.TestngAddDoctor.Adddoc(TestngAddDoctor.java:50)
+          <textarea readonly class="code-block">org.openqa.selenium.NoSuchElementException: Cannot locate an element using id=id_gender1
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-U3D6RDB', ip: '192.168.0.105', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at AutomationExcerise.TestCase1.test1(TestCase1.java:35)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -178,12 +180,12 @@
 <span class="meta">
 <span class='badge log badge-danger'>1</span>
 </span>
-<p class="name">java.lang.AssertionError</p>
+<p class="name">org.openqa.selenium.NoSuchElementException</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>java.lang.AssertionError</h4>
+<h4>org.openqa.selenium.NoSuchElementException</h4>
 <span status="fail" class='badge log badge-danger'>1 failed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -197,9 +199,9 @@
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>15:21:35 pm</td>
+<td>22:02:02 pm</td>
 <td>
-<a href="#" class="linked" test-id='1' id='1'>Adddoc</a>
+<a href="#" class="linked" test-id='1' id='1'>test1</a>
 </td>
 </tr>
 </tbody>
@@ -219,13 +221,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Mar 28, 2023 03:21:32 pm</h3>
+<h3>Jun 16, 2023 10:02:02 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Mar 28, 2023 03:21:38 pm</h3>
+<h3>Jun 16, 2023 10:02:19 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -295,7 +297,7 @@
 </div></div>
 <script>
 var timeline = {
-"Adddoc":3.128
+"test1":16.572
 };
 </script>
 <div class="row">
